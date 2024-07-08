@@ -4,7 +4,7 @@ def min_cost_of_cuts(m, C):
     dp = [[0 for _ in range(n)] for _ in range(n)]
     cuts = [[0 for _ in range(n)] for _ in range(n)]
 
-    for h in range(2, n):
+    for h in range(int(n / 2), n):
         for i in range(n - h):
             j = i + h
             dp[i][j] = float("inf")
