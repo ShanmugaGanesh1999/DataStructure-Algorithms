@@ -1,12 +1,12 @@
 # O(n) - smallest number sorted at first, then second smallest ...
 def insertion(arr):
     for i in range(1, len(arr)):
-        cur_val = arr[i]
-        j = i - 1
-        while j >= 0 and cur_val < arr[j]:
-            arr[j + 1] = arr[j]
+        j = i
+        k = arr[i]
+        while j > 0 and arr[j - 1] > k:
+            arr[j] = arr[j - 1]
             j -= 1
-        arr[j + 1] = cur_val
+        arr[j] = k
     return arr
 
 
