@@ -4,7 +4,7 @@ def swap(arr, i, j):
     arr[j] = temp
 
 
-# O(n^2) - largest number sorted at first, then second largest ..,
+# O(n^2) - largest number sorted at first, then second largest ...,
 def bubble(arr):
     for i in range(len(arr)):
         no_swaps = True
